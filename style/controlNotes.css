@@ -1,0 +1,196 @@
+@charset "ISO-8859-1";
+table{
+	color: white;
+	border-collapse: collapse;
+	border: 1px solid black;
+	width: 100%;	
+	}
+	
+tr{
+	
+}
+
+	
+th, td{
+	border: 1px solid black;
+	text-align: center; 
+        }
+        
+table td {
+	font-size: 12px; /* Tamanho de fonte desejado */
+	font-family: FreeMono;
+}        
+  
+.icons{
+	display: flex;
+	text-align: center;
+	align-items: center;
+		}
+
+.header {
+  background-color: rgb(63 , 63, 202);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Ajuste conforme necessário */
+}
+		
+.inputNotes {
+	 width: calc(100% - 10px); /* Tamanho dos inputs com margens removidas */
+     margin: 2px; /* Espaçamento entre os inputs */
+     box-sizing: border-box;
+        }
+        
+.inner-table {
+	border-collapse: collapse;
+	width: 100%;
+       }     
+       
+.inner-table td {
+	padding: 0; /* Remove o preenchimento interno das células das tabelas internas */
+	}
+
+.provas {
+	background-color: rgb(63 , 63, 202);
+     }
+     
+#id{
+	width: 5px;
+}
+
+#meuCheckbox{
+	padding: 5px;
+}
+
+.bolinhaRed {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red; /* Substitua "red" pela cor desejada */
+}
+    
+.bolinhaGreen {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: green /* Substitua "red" pela cor desejada */
+}
+
+.apresentacao{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.turma,
+.turma div {
+    margin-right: 20px; /* Ajuste conforme necessário */
+  }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 13px; 
+}
+
+li {
+    display: inline-block;
+    margin-right: 10px; /* Adicione algum espaçamento entre as li, se desejar */
+    font-size: 13px; 
+}
+
+li {
+	display: inline-block;
+    margin-right: 10px;
+    list-style-type: none; /* Remove o marcador padrão */
+    font-size: 13px; 
+}
+
+li::before{
+	content: "\25A0"; 
+    width: 1em; /* Ajuste a largura conforme necessário */
+    height: 1em; /* Ajuste a altura conforme necessário */
+    margin-right: 0.5em; /* Espaçamento entre o quadrado e*/
+    color: rgb(99,141,78);
+    font-size: 13px; 
+}
+  
+.list{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.turmaMateria {
+    display: flex;
+}
+
+.turmaMateria h3, .turmaMateria h3 {
+    margin: 0; /* Para remover a margem padrão dos elementos h3 e h7 */
+}
+
+
+.imagem-container {
+    margin-right: 300px; /* Ajuste o valor conforme necessário para afastar a imagem da turma e matéria */
+}
+
+.turma {
+    display: inline-block; /* Isso faz com que o bloco de turma e matéria fique na mesma linha */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Isso faz com que os botões fiquem espaçados, colocando um à esquerda e outro à direita */
+}
+
+.planoAula {
+    margin-top: 20px; /* Adicione um espaçamento entre os botões */
+}
+
+#delete{
+	background-color: red;
+}
+
+#preenchaCampos{
+	display: none;
+}
+
+#datesStudent{
+	width: 1300px; 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .apresentacao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 80%; 
+    }
+
+    .turma {
+        margin-top: 20px;
+    }
+     .turmaMateria {
+        text-align: center;
+    }
+
+    .list {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 1101px) {
+    #datesStudent {
+    }
+}
+
+
+
+
