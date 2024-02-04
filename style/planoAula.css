@@ -1,0 +1,30 @@
+@charset "ISO-8859-1";
+.table{
+	width: 100%; 
+    overflow-x: auto;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    padding: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    }
+    
+#semUpdate{
+	background-color: red;
+	display: none;
+}
+
+@media screen and (min-width: 351) {
+    #cardBlue {
+        width: 300px; /* Tamanho fixo para telas maiores que 300 pixels */
+    }
+}
+

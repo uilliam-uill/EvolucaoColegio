@@ -1,0 +1,44 @@
+@charset "ISO-8859-1";
+body{
+	padding: 0%;
+	margin: 0%;
+}
+
+.titleTeacher{
+	color: rgb(63 , 63, 202);
+}
+
+.trBlue{
+	background-color:  rgb(63 , 63, 202);
+	color: white}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
+.header{
+	background-color: rgb(63, 63, 202);
+	  display: flex;
+  	  justify-content: space-between;
+}
+
+.tableText{
+	font-size: Noto Sans;
+}
+
+.icons{
+	display: flex;
+}
+
+.tableClass{
+	padding: 60px;
+	}
+	
+	@media screen and (max-width: 768px) {
+    .table-container {
+        overflow-x: scroll;
+        padding: 0%;
+        margin: 0%;
+    }
+}
