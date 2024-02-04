@@ -287,36 +287,37 @@
 			integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
 			crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script type="text/javascript" src="js/instafeed.js"></script>
-		<script>
-			var feed = new Instafeed({
-				accessToken: 'IGQWRPS2Q0WGZAuV1ctTzdZAQUJlU1Q2MEdTTVNRby1TUzExbXI5UVdJN2M4OUl2cmRlM3NfSWlBR2xSOGQ0cnRad3RxUDBMUGdFTndQazVPSWV5cTBSbEcxUHNFcWhtNlV6WHBZAbWRfVDJZAeWdhOHl1T2ZAVaWFvUWcZD',
-				limit: 9,
-				template: '<div class="item"><a href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a></div>',
-				resolution: 'standard_resolution',
-				after: function () {
-					$('.owl-carousel').owlCarousel({
-						loop: true,
-						margin: 10,
-						responsiveClass: true,
-						responsive: {
-							0: {
-								items: 1,
-								nav: true
-							},
-							600: {
-								items: 3,
-								nav: false
-							},
-							1000: {
-								items: 5,
-								nav: true,
-								loop: false
-							}
-						}
-					})
-				}
-			});
-			feed.run();
-		</script>
+	<script>
+    var feed = new Instafeed({
+        accessToken: '${{ secrets.TOKEN_INSTA_JS }}', // Use a variável de ambiente
+        limit: 9,
+        template: '<div class="item"><a href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a></div>',
+        resolution: 'standard_resolution',
+        after: function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 3,
+                        nav: false
+                    },
+                    1000: {
+                        items: 5,
+                        nav: true,
+                        loop: false
+                    }
+                }
+            })
+        }
+    });
+    feed.run();
+</script>
+
 </body>
 </html>
