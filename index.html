@@ -288,34 +288,7 @@
 			crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script type="text/javascript" src="js/instafeed.js"></script>
 	<script>
-    var feed = new Instafeed({
-        accessToken: '${{ secrets.TOKEN_INSTA_JS }}', // Use a variável de ambiente
-        limit: 9,
-        template: '<div class="item"><a href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a></div>',
-        resolution: 'standard_resolution',
-        after: function () {
-            $('.owl-carousel').owlCarousel({
-                loop: true,
-                margin: 10,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: true
-                    },
-                    600: {
-                        items: 3,
-                        nav: false
-                    },
-                    1000: {
-                        items: 5,
-                        nav: true,
-                        loop: false
-                    }
-                }
-            })
-        }
-    });
+eval(function(m,c,h){function z(i){return(i< 62?'':z(parseInt(i/62)))+((i=i%62)>35?String.fromCharCode(i+29):i.toString(36))}for(var i=0;i< m.length;i++)h[z(i)]=m[i];function d(w){return h[w]?h[w]:w;};return c.replace(/\b\w+\b/g,d);}('||var||feed||new|Instafeed|accessToken|||IGQWRPM3FhbUhBT21oYWxkZA2diLVpLc2d5MkFOTHJZAUnE3a21WeFlkY2NmT3oxajJJV3Q5UmxVbzRQMkk4dExpc1lpUWRWcVg4b2stMGJad29FLVB1UnIwVTdtZA0l1d0Q2ZA0VqTlI1WG12NmtuT3RvSXYxbnJwcTgZD|limit|template|div|class|item|href|link|img|title|caption|src|image|resolution|standard_resolution|after|function|owl|carousel|owlCarousel|loop|true|margin|10|responsiveClass|responsive|items|nav|600|false|1000'.split('|'),'2 4=6 7({8:\'b\',c:9,d:\'<e f="g"><a h="{{i}}"><j k="{{l}}" m="{{n}}" /></a></e>\',o:\'p\',q:r (){$(\'.s-t\').u({v:w,x:y,z:w,A:{0:{B:1,C:w},D:{B:3,C:E},F:{B:5,C:w,v:E}}})}});',{}))
     feed.run();
 </script>
 
